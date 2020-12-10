@@ -1,0 +1,21 @@
+
+1. We should be able to supply an array of objects
+2. interface Option{ 
+     value: string;
+    id: number;
+}
+
+3. Dropdown should accept an array of options. Options []
+
+4.  
+
+useEffect(()=>{
+  //API call here with newly selected drop down item
+}, [selectedDropdownItem])
+
+
+const [selectedDropdownItem, setSelectedDropDownItem]  = useState({value:"January", id:1 })
+
+<Dropdown  options={} selectedItem={} onDropDownItemSelection={setSelectedDropDownItem} />
+
+<StatsForMonth  month={selectedDropdownItem} />

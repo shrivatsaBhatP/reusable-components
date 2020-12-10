@@ -1,0 +1,8 @@
+.Arrow {
+    padding: 2px;
+    border-top: 1px solid red;
+    border-right: 1px solid red;
+    width: 2px;
+    height: 2px;
+    transform: rotate(-135deg);
+}
