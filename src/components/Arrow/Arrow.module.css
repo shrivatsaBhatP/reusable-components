@@ -1,8 +1,16 @@
 .Arrow {
-    padding: 2px;
-    border-top: 1px solid red;
-    border-right: 1px solid red;
-    width: 2px;
-    height: 2px;
-    transform: rotate(-135deg);
+  --arrow-direction: 0deg;
+  --arrow-color: #ff0000;
+  --arrow-size: 1px;
+  --arrow-rotate: calc(var(--arrow-direction) - 45deg);
+}
+
+.Arrow {
+  border-top: var(--arrow-size) solid var(--arrow-color);
+  border-right: var(--arrow-size) solid var(--arrow-color);
+  padding: calc(var(--arrow-size) * 2);
+  height: calc(var(--arrow-size) * 2);
+  width: calc(var(--arrow-size) * 2);
+  transform: rotate(var(--arrow-rotate));
+  transition: all 0.2s;
 }
